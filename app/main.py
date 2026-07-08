@@ -1,0 +1,10 @@
+import sys
+from PySide6.QtWidgets import QApplication
+from ui.main_window_pyside import MainWindow
+
+
+def run_app():
+    app = QApplication(sys.argv)
+    window = MainWindow()
+    window.show()
+    sys.exit(app.exec())
